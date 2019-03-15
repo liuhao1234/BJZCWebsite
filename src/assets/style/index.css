@@ -364,6 +364,13 @@ ul,li{
 	top: 50%;
     margin-top: -120px;
     margin-left: -500px;
+    opacity: 0;
+}
+.section02.section-active .pro-list{
+	opacity:1;
+	-webkit-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
 }
 .section02 .pro-list .list-cell{
 	position: relative;
@@ -644,6 +651,13 @@ ul,li{
 .section05 .serve-content .map{
 	float: right;
 	position: relative;
+	opacity: 0;
+}
+.section05.section-active .serve-content .map{
+	opacity: 1;
+	-webkit-transition: all 1s ease 1.5s;
+	-o-transition: all 1s ease 1.5s;
+	transition: all 1s ease 1.5s;
 }
 .section05 .serve-content .map span{
 	position: absolute;
@@ -742,6 +756,13 @@ ul,li{
 	top: 190px;
 	left: 0;
 	width: 100%;
+	opacity: 0;
+}
+.section06.section-active .jobs-list{
+	opacity: 1;
+	-webkit-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
 }
 .section06 .jobs-list .jobs-tab{
 	text-align: center;
@@ -875,6 +896,13 @@ ul,li{
 	position: absolute;
 	width: 100%;
 	top: 190px;
+	opacity: 0;
+}
+.section07.section-active .about-us{
+	opacity: 1;
+	-webkit-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
 }
 .section07 .about-us .us-tab{}
 .section07 .about-us .us-tab ul{
