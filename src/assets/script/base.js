@@ -69,6 +69,12 @@ $(function(){
 	$(".jobs-tab").find("span").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 	})
+
+	//首页动画
+	$(".section01").removeClass("active");
+	setTimeout(function(){
+		$(".section01").addClass("active");
+	},1000)
 	
 	//跳转到相应的页面
 	//$.fn.fullpage.moveTo(1);

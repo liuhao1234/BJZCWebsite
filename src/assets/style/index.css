@@ -518,6 +518,7 @@ ul,li{
 		transform: scale(1.4);
 	}
 }
+
 .section05{
 	background: url(../images/section5-bg.png) no-repeat center bottom;
 	background-size: 100% auto;
@@ -542,15 +543,69 @@ ul,li{
 	width: 140px;
 	height: 140px;
 	border:4px solid #21cf8c;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+	opacity:0;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
 	border-radius: 8px;
+}
+.section05.active .serve-content .clients-list .client-cell:nth-child(1){
+	opacity: 1;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.section05.active .serve-content .clients-list .client-cell:nth-child(2){
+	opacity: 1;
+	-webkit-transition: all 1s ease .5s;
+	-o-transition: all 1s ease .5s;
+	transition: all 1s ease .5s;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.section05.active .serve-content .clients-list .client-cell:nth-child(3){
+	opacity: 1;
+	-webkit-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.section05.active .serve-content .clients-list .client-cell:nth-child(1) .some-client{
+	-webkit-transition: all 1s ease .5s;
+	-o-transition: all 1s ease .5s;
+	transition: all 1s ease .5s;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.section05.active .serve-content .clients-list .client-cell:nth-child(2) .some-client{
+	-webkit-transition: all 1s ease 1s;
+	-o-transition: all 1s ease 1s;
+	transition: all 1s ease 1s;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.section05.active .serve-content .clients-list .client-cell:nth-child(3) .some-client{
+	-webkit-transition: all 1s ease 1.5s;
+	-o-transition: all 1s ease 1.5s;
+	transition: all 1s ease 1.5s;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .section05 .serve-content .clients-list .client-cell:nth-child(1){}
@@ -564,10 +619,6 @@ ul,li{
 .section05 .serve-content .clients-list .client-cell .some-client{
 	width: 100%;
 	height: 100%;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
 }
 .section05 .serve-content .clients-list .client-cell:nth-child(1) .some-client{
 	background: url(../images/clients.png) no-repeat 14px -82px;
