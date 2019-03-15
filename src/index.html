@@ -11,12 +11,13 @@
 	<title>北京资采信息技术有限公司</title>
 </head>
 <body>
-	<div class="ws-top-nav color-black">
+	<div class="ws-top-nav">
 		<div class="inner-content clear-fixed-after">
 			<i class="ws-logo"></i>
 			<div class="ws-nav-content">
 				<ul class="clear-fixed-after">
-					<li>首页</li>
+					<span class="nav-line"></span>
+					<li class="active">首页</li>
 					<li>产品体系</li>
 					<li>行业方案</li>
 					<li>团队风采</li>
@@ -28,7 +29,7 @@
 		</div>
 	</div>
 	<div id="fullpage">
-		<div class="section section01">
+		<div class="section section01 active">
 			<i class="icon-arrowdown"></i>
 			<ul class="slide-guide">
 				<li class="active"><span></span></li>
@@ -73,7 +74,7 @@
 					<b></b>
 				</div>
 				<div class="pro-list clear-fixed-after">
-					<div class="list-cell">
+					<div class="list-cell active">
 						<span>
 							<b>数家系统</b>
 							<p>数家系统的简要介绍，数家是数据之家，对数据分析之后进行可视化的大数据分析平台</p>
@@ -132,12 +133,52 @@
 					<small>team mien</small><br>
 					<b></b>
 				</div>
-				<div class="mien-list">
-					<div class="mien-cell">
-						<div class="mien-img"><img src="assets/images/team-mien-img01.jpg" alt=""></div>
-						<div class="mien-detail">
-							<span>资采年会</span>
-							<p>2019年北京资采在沈阳举行你年会，全国各地兄弟姐妹齐聚福地沈阳</p>
+				<div id="mienList" class="mien-list swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="mien-cell">
+								<div class="mien-img"><img src="assets/images/team-mien-img01.jpg" alt=""></div>
+								<div class="mien-detail">
+									<span>资采年会</span>
+									<p>2019年北京资采在沈阳举行你年会，全国各地兄弟姐妹齐聚福地沈阳</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mien-cell">
+								<div class="mien-img"><img src="assets/images/team-mien-img02.jpg" alt=""></div>
+								<div class="mien-detail">
+									<span>资采年会</span>
+									<p>2019年北京资采在沈阳举行你年会，全国各地兄弟姐妹齐聚福地沈阳</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mien-cell">
+								<div class="mien-img"><img src="assets/images/team-mien-img01.jpg" alt=""></div>
+								<div class="mien-detail">
+									<span>资采年会</span>
+									<p>2019年北京资采在沈阳举行你年会，全国各地兄弟姐妹齐聚福地沈阳</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mien-cell">
+								<div class="mien-img"><img src="assets/images/team-mien-img01.jpg" alt=""></div>
+								<div class="mien-detail">
+									<span>资采年会</span>
+									<p>2019年北京资采在沈阳举行你年会，全国各地兄弟姐妹齐聚福地沈阳</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mien-cell">
+								<div class="mien-img"><img src="assets/images/team-mien-img01.jpg" alt=""></div>
+								<div class="mien-detail">
+									<span>资采年会</span>
+									<p>2019年北京资采在沈阳举行你年会，全国各地兄弟姐妹齐聚福地沈阳</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -186,10 +227,9 @@
 				</div>
 				<div class="jobs-list">
 					<div class="jobs-tab">
-						<span>产品经理</span>
+						<span class="active">产品经理</span>
 						<span>产品运营</span>
 						<span>交互设计师</span>
-						<i></i>
 					</div>
 					<ul class="clear-fixed-after">
 						<li>
@@ -225,10 +265,10 @@
 					</div>
 					<div class="us-detail">
 						<ul class="clear-fixed-after">
-							<li style="display:none;">
+							<li>
 								<p>公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介</p>
 							</li>
-							<li>
+							<li style="display:none;">
 								<div class="course">
 									<i></i>
 									<div class="course-cell clear-fixed-after">
@@ -260,6 +300,7 @@
 	<script src="./lib/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./lib/fullpage/2.9.7/fullpage.js"></script>
 	<script src="./lib/swiper/4.5.0/swiper.js"></script>
+	<script src="./assets/script/plugins.js"></script>
 	<script src="./assets/script/base.js"></script>
 </body>
 </html>
