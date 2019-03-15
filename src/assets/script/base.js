@@ -1,5 +1,6 @@
 
 $(function(){
+	var firstLoad = true;
 	$.initNavActive();
 	$.initIndexSlide();
 	$(".pro-list .list-cell").mouseenter(function(){
@@ -34,19 +35,26 @@ $(function(){
 
 			//首屏动画
 			if(index === 1){
-				$(".section01").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section01").addClass("section-active");
 			}else if(index === 2){
-				$(".section02").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section02").addClass("section-active");
 			}else if(index === 3){
-				$(".section03").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section03").addClass("section-active");
 			}else if(index === 4){
-				$(".section04").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section04").addClass("section-active");
 			}else if(index === 5){
-				$(".section05").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section05").addClass("section-active");
 			}else if(index === 6){
-				$(".section06").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section06").addClass("section-active");
 			}else if(index === 7){
-				$(".section07").addClass("active");
+				$(".section").removeClass("section-active");
+				$(".section07").addClass("section-active");
 			}
 
 		},
@@ -71,10 +79,10 @@ $(function(){
 	})
 
 	//首页动画
-	$(".section01").removeClass("active");
-	setTimeout(function(){
-		$(".section01").addClass("active");
-	},1000)
+	// $(".section01").removeClass("active");
+	// setTimeout(function(){
+	// 	$(".section01").addClass("active");
+	// },1000)
 	
 	//跳转到相应的页面
 	//$.fn.fullpage.moveTo(1);
