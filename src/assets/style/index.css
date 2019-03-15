@@ -873,7 +873,7 @@ ul,li{
 .section07 .about-us{
 	position: absolute;
 	width: 100%;
-	top: 220px;
+	top: 190px;
 }
 .section07 .about-us .us-tab{}
 .section07 .about-us .us-tab ul{
@@ -921,6 +921,7 @@ ul,li{
 	margin: 0 auto;
 	position: relative;
 	border-top: 1px solid transparent;
+	height: calc(100vh - 300px);
 }
 .section07 div.course i{
 	display: block;
@@ -1005,7 +1006,7 @@ ul,li{
 	background: rgba(0,0,0,.3);
 	text-align: center;
 	font-size: 12px;
-	line-height: 50px;
+	line-height: 30px;
 }
 
 
