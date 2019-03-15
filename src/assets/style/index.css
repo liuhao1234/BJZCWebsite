@@ -5,6 +5,7 @@
 /* common */
 body{
 	font-weight: 200;
+	user-select: none;
 }
 ul,li{
 	margin: 0;
