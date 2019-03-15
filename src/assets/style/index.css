@@ -86,23 +86,23 @@ ul,li{
 .section.section-active .title span{
 	top:0;
 	opacity: 1;
-	-webkit-transition: all 1s ease .5s;
-	-o-transition: all 1s ease .5s;
-	transition: all 1s ease .5s;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 .section.section-active .title small{
 	top:0;
 	opacity: 1;
-	-webkit-transition: all 1s ease .7s;
-	-o-transition: all 1s ease .7s;
-	transition: all 1s ease .7s;
+	-webkit-transition: all 1s ease .3s;
+	-o-transition: all 1s ease .3s;
+	transition: all 1s ease .3s;
 }
 .section.section-active .title b{
 	top:0;
 	opacity: 1;
-	-webkit-transition: all 1s ease 1s;
-	-o-transition: all 1s ease 1s;
-	transition: all 1s ease 1s;
+	-webkit-transition: all 1s ease .5s;
+	-o-transition: all 1s ease .5s;
+	transition: all 1s ease .5s;
 }
 
 /* fullpage reset */
