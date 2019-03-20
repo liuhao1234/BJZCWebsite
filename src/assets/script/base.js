@@ -1,4 +1,3 @@
-
 $(function(){
 	var firstLoad = true;
 	$.initNavActive();
@@ -31,8 +30,6 @@ $(function(){
 				})
 			}
 
-
-
 			//首屏动画
 			if(index === 1){
 				$(".section").removeClass("section-active");
@@ -57,16 +54,12 @@ $(function(){
 				$(".section07").addClass("section-active");
 			}
 
-		},
-		onLeave: function(index, nextIndex, direction){
-			
-		},
+		}
 	});
 
-
 	var mySwiper = new Swiper ('#mienList', {
-					    slidesPerView: 3,
-				      	spaceBetween: 30
+					    slidesPerView: 4,
+				      	spaceBetween: 16
 					})        
 
 	$(".us-tab li").click(function(){
@@ -77,13 +70,4 @@ $(function(){
 	$(".jobs-tab").find("span").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 	})
-
-	//首页动画
-	// $(".section01").removeClass("active");
-	// setTimeout(function(){
-	// 	$(".section01").addClass("active");
-	// },1000)
-	
-	//跳转到相应的页面
-	//$.fn.fullpage.moveTo(1);
 })
