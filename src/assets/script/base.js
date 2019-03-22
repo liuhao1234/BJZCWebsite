@@ -6,7 +6,7 @@ $(function(){
 		$(this).addClass("active").siblings(".list-cell").removeClass("active");
 	})
 	$('#fullpage').fullpage({
-		sectionsColor: ['#f87b7b', '#fff', '#86d19f', '#77afe6', '#fff', '#fff', '#7fc9c3'],
+		sectionsColor: ['#f87b7b', '#fff', '#fff', '#77afe6', '#fff', '#fff', '#7fc9c3'],
 		controlArrows: false,
 		afterLoad: function(anchorLink, index){
 			//导航动画
@@ -36,20 +36,14 @@ $(function(){
 				$(".section01").addClass("section-active");
 			}else if(index === 2){
 				$(".section").removeClass("section-active");
-				$(".section02").addClass("section-active");
+				$(".section04").addClass("section-active");
 			}else if(index === 3){
 				$(".section").removeClass("section-active");
-				$(".section03").addClass("section-active");
+				$(".section05").addClass("section-active");
 			}else if(index === 4){
 				$(".section").removeClass("section-active");
-				$(".section04").addClass("section-active");
-			}else if(index === 5){
-				$(".section").removeClass("section-active");
-				$(".section05").addClass("section-active");
-			}else if(index === 6){
-				$(".section").removeClass("section-active");
 				$(".section06").addClass("section-active");
-			}else if(index === 7){
+			}else if(index === 5){
 				$(".section").removeClass("section-active");
 				$(".section07").addClass("section-active");
 			}
