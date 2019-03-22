@@ -2,6 +2,7 @@ $(function(){
 	var firstLoad = true;
 	$.initNavActive();
 	$.initIndexSlide();
+	$.initJobListEx();
 	$(".pro-list .list-cell").mouseenter(function(){
 		$(this).addClass("active").siblings(".list-cell").removeClass("active");
 	})

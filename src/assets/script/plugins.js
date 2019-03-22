@@ -50,5 +50,11 @@ $.extend({
 			$(this).addClass("active").siblings("li").removeClass("active");
 			$.fn.fullpage.moveTo(1,index);
 		})
+	},
+
+	initJobListEx:function(){
+		$(".job-table").find("ul").not(":first").click(function(){
+			$(this).next().slideDown().siblings("dl").slideUp();
+		})
 	}
 })

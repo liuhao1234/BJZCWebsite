@@ -886,6 +886,44 @@ ul,li{
 	background: #1db57a;
 }
 
+.section06 .jobs-list .job-table{
+	border:2px solid #fff;
+	background: #f6f7f8;
+	color: #4a4a4a;
+}
+.section06 .jobs-list .job-table ul{
+	margin: 0px;
+	cursor: pointer;
+}
+.section06 .jobs-list .job-table ul:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.section06 .jobs-list .job-table ul li{
+	border:2px solid #fff;
+	box-sizing: border-box;
+	text-align: center;
+	padding:10px 0;
+	width: 425px;
+}
+.section06 .jobs-list .job-table ul:nth-child(1) li{
+	font-weight: bold;
+}
+.section06 .jobs-list .job-table dl{
+	border:2px solid #fff;
+	margin: 0;
+	padding:20px 50px;
+}
+.section06 .jobs-list .job-table dl dt{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.section06 .jobs-list .job-table dl dt:nth-child(1){
+	margin-top: 0;
+}
+.section06 .jobs-list .job-table dl dd{}
+
 /* section07 */
 .section07{
 	background: url(../images/section7-bg.jpg) no-repeat center bottom;
