@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./lib/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="./lib/fullpage/2.9.7/fullpage.min.css">
 	<link rel="stylesheet" href="./lib/swiper/4.5.0/swiper.min.css">
+	<link rel="stylesheet" href="./lib/jedate/jedate.css">
 	<link rel="stylesheet" href="./assets/style/index.css">
 	<title>北京资采信息技术有限公司</title>
 </head>
@@ -42,25 +43,27 @@
 					<span class="second"><b>服务</b>成就客户<img src="assets/images/icon-corner_down.png" alt=""></span>
 				</div>
 			</div>
-			<div class="slide slide01">
+			<div class="slide slide02">
 				<div class="text">
-					<span class="first">数据创造<b>价值</b><img src="assets/images/icon-corner_up.png" alt=""></span>
-					<span class="second"><b>服务</b>成就客户<img src="assets/images/icon-corner_down.png" alt=""></span>
-					<small>为企业复杂业务和多方合作而生</small>
+					<span>全局<small>数据</small>可视化助力<small>决策</small>运营</span>
+					<b>快速</b>
+					<b>简介</b>
+					<b>灵活</b>
 				</div>
 			</div>
-			<div class="slide slide01">
+			<div class="slide slide03">
 				<div class="text">
-					<span class="first">数据创造<b>价值</b><img src="assets/images/icon-corner_up.png" alt=""></span>
-					<span class="second"><b>服务</b>成就客户<img src="assets/images/icon-corner_down.png" alt=""></span>
-					<small>为企业复杂业务和多方合作而生</small>
+					<span class="first">TB至PB级超<small>大数据</small>量多维自助<small>分析</small>工具</span>
+					<b>SOA技术架构</b>
+					<b>MPP数据库</b>
+					<b>OLTP与OLAP结合的数据处理</b>
 				</div>
 			</div>
-			<div class="slide slide01">
+			<div class="slide slide04">
 				<div class="text">
-					<span class="first">数据创造<b>价值</b><img src="assets/images/icon-corner_up.png" alt=""></span>
-					<span class="second"><b>服务</b>成就客户<img src="assets/images/icon-corner_down.png" alt=""></span>
-					<small>为企业复杂业务和多方合作而生</small>
+					<img src="./assets/images/icon-index04.png" alt="">
+					<span class="first">聚焦<small>价值</small>运营，优化<small>用户</small>质态</span>
+					<b>数据挖掘，价值提升，用户保有</b>
 				</div>
 			</div>
 		</div>
@@ -217,13 +220,112 @@
 							</dd>
 						</dl>
 					</div>	
-					<button>发送简历</button>				
+					<button class="send-resume">发送简历</button>				
 				</div>
-				<div class="jobs-apply">
-					<div class="job-form">
-						
+				<div class="jobs-apply" style="display: none;">
+					<div class="job-form clear-fixed-after">
+						<div class="form-cell width50">
+							<span>意向岗位类型</span>
+							<select name="" id="">
+								<option value="">产品类</option>
+								<option value="">运维类</option>
+							</select>
+						</div>
+						<div class="form-cell width50">
+							<span>意向岗位名称</span>
+							<select name="" id="">
+								<option value="">产品类</option>
+								<option value="">运维类</option>
+							</select>
+						</div>
+						<div class="form-cell width100">
+							<span>职位描述</span>
+							<div class="job-detail">
+								<dl>
+									<dt>工作地点</dt>
+									<dd>
+										南京、无锡
+									</dd>
+									<dt>工作职责</dt>
+									<dd>
+										1、从技术支持等前线部门了解反馈，进行用户需求的手机与分析，参与产品前期策划与部分功能设计。<br/>2、负责对公司新产品木块的生命周期进行跟进，对产品模块进行测试磨合，对提交的bug进行跟踪直致问题解决。<br/>3、编写产品模块相关的用户文档。
+									</dd>
+									<dt>任职要求</dt>
+									<dd>
+										1、重点院校本科及以上，理工科专业背景（设计类专业除外），毕业三年<br/>2、专研及创新能力强良好的自我驱动能力和强烈的责任感，良好的沟通能力，团队合作能力<br/>3、对互联网某个领域或者某个软件有深刻研究
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="form-cell width100">
+							<span>意向工作城市</span>
+							<input type="text" placeholder="南京、无锡">
+						</div>
+						<!-- <div class="form-title width100">
+							<span>我的信息</span>
+						</div> -->
+						<div class="form-cell width50">
+							<span>姓名</span>
+							<input type="text" placeholder="您的姓名">
+						</div>
+						<div class="form-cell width50">
+							<span>性别</span>
+							<select name="" id="">
+								<option value="">男</option>
+								<option value="">女</option>
+							</select>
+						</div>
+						<div class="form-cell width50">
+							<span>手机号码</span>
+							<input type="text" placeholder="您的手机号码">
+						</div>
+						<div class="form-cell width50">
+							<span>邮箱</span>
+							<input type="text" placeholder="您的邮箱地址">
+						</div>
+						<div class="form-cell width50">
+							<span>籍贯</span>
+							<input type="text" placeholder="您的祖籍">
+						</div>
+						<div class="form-cell width50">
+							<span>出生年月</span>
+							<input id="bornDate" disabled="disabled" class="date-contrl" type="text" placeholder="您的出生年月">
+						</div>
+						<div class="form-cell width50">
+							<span>毕业院校</span>
+							<input type="text" placeholder="您所毕业的院校">
+						</div>
+						<div class="form-cell width50">
+							<span>专业</span>
+							<input type="text" placeholder="您所毕业的专业">
+						</div>
+						<div class="form-cell width50">
+							<span>学历</span>
+							<input type="text" placeholder="本科、研究生...">
+						</div>
+						<div class="form-cell width50">
+							<span>毕业年月</span>
+							<input disabled="disabled" class="date-contrl" type="text" placeholder="您的毕业年月">
+						</div>
+						<div class="form-cell width100">
+							<span>简历附件</span>
+							<small class="file-upload">上传简历</small>
+							<b>*仅支持pdf,word文件上传</b>
+							<input class="file-upload-contrl" style="display: none;" type="file">
+						</div>
+						<div class="form-cell width50">
+							<span>是否内推</span>
+							<select name="" id="">
+								<option value="">是</option>
+								<option value="">否</option>
+							</select>
+						</div>
+						<div class="form-cell width50">
+							<span>内推人及部门</span>
+							<input type="text" placeholder="内推人姓名+部门">
+						</div>
 					</div>
-					<button>返回</button>		
+					<button class="go-back">返回</button>		
 				</div>
 			</div>
 		</div>
@@ -238,7 +340,7 @@
 					<div class="us-detail">
 						<ul class="clear-fixed-after">
 							<li>
-								<p>公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介</p>
+								<p>北京资采信息技术有限公司于2015年10月26日在丰台分局登记成立。法定代表人吴伟，公司经营范围包括技术开发、技术咨询、技术服务、技术推广、技术转让等。</p>
 							</li>
 							<li style="display:none;">
 								<div class="course">
@@ -272,6 +374,7 @@
 	<script src="./lib/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./lib/fullpage/2.9.7/fullpage.min.js"></script>
 	<script src="./lib/swiper/4.5.0/swiper.min.js"></script>
+	<script src="./lib/jedate/jedate.js"></script>
 	<script src="./assets/script/plugins.js"></script>
 	<script src="./assets/script/base.js"></script>
 </body>

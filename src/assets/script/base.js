@@ -48,15 +48,40 @@ $(function(){
 				$(".section").removeClass("section-active");
 				$(".section07").addClass("section-active");
 			}
-
+		},
+		afterSlideLoad: function(anchorLink,index,slideIndex,direction){
+			// setTimeout(function(){
+			// 	$(".section01").addClass("section-active");
+			// },500)
+		},
+		onSlideLeave:function(){
+			//$(".section").removeClass("section-active");
 		}
 	});
+
+	$(".job-form").mouseenter(function(){
+		$.fn.fullpage.setAllowScrolling(false);
+	}).mouseleave(function(){
+		$.fn.fullpage.setAllowScrolling(true);
+	})
 
 	var mySwiper = new Swiper ('#mienList', {
 					    slidesPerView: 4,
 				      	spaceBetween: 16
-					})        
+					})
 
+	$(".send-resume").click(function(){
+		$(".jobs-list").hide();
+		$(".jobs-apply").fadeIn(1000);
+	})
+	$(".go-back").click(function(){
+		$(".jobs-apply").hide();
+		$(".jobs-list").fadeIn(1000);
+	})
+
+    $(".file-upload").click(function(){
+    	$(".file-upload-contrl").click();
+    })
 	$(".us-tab li").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		var index = $(this).index()
