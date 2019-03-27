@@ -50,6 +50,21 @@ $(function(){
 			}
 		},
 		afterSlideLoad: function(anchorLink,index,slideIndex,direction){
+			//console.log(index,slideIndex)
+			$(".section01 .slide").removeClass("slide-active");
+			if(index===1 && slideIndex===0){
+				$(".section01").addClass("section-active");
+				$(".section01 .slide01").addClass("slide-active");
+			}else if(index===1 && slideIndex===1){
+				$(".section01").removeClass("section-active");
+				$(".section01 .slide02").addClass("slide-active");
+			}else if(index===1 && slideIndex===2){
+				$(".section01").removeClass("section-active");
+				$(".section01 .slide03").addClass("slide-active");
+			}else if(index===1 && slideIndex===3){
+				$(".section01").removeClass("section-active");
+				$(".section01 .slide04").addClass("slide-active");
+			}
 			// setTimeout(function(){
 			// 	$(".section01").addClass("section-active");
 			// },500)
