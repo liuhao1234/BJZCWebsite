@@ -7,7 +7,7 @@ $(function(){
 		$(this).addClass("active").siblings(".list-cell").removeClass("active");
 	})
 	$('#fullpage').fullpage({
-		sectionsColor: ['#f87b7b', '#fff', '#fff', '#77afe6', '#fff', '#fff', '#7fc9c3'],
+		sectionsColor: ['#000', '#fff', '#fff', '#77afe6', '#fff', '#fff', '#7fc9c3'],
 		controlArrows: false,
 		afterLoad: function(anchorLink, index){
 			//导航动画
